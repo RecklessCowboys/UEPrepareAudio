@@ -22,11 +22,11 @@ tool that may need to be modified for your use case.
   1. Copy this directory to %USERPROFILE%\Documents\WindowsPowerShell\Modules
   2. Install ffmpeg.
 
-# Usage: ue4-prepare-audio
+## Usage: ue4-prepare-audio
 
 Run `ue4-prepare-audio` to convert a single audio file 
 
-# Usage: ue4-prepare-audio-folder
+## Usage: ue4-prepare-audio-folder
 
 Run `ue4-prepare-audio-folder` to convert an entire directory structure. This creates a new directory
 structure that mimics the source directory but fills it with converted files.
