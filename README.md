@@ -1,6 +1,6 @@
 # UE4 Prepare Audio Scripts
 
-Powershell scripts that convert audio files into a
+PowerShell scripts that convert audio files into a
 [format compatible with Unreal Engine](https://docs.unrealengine.com/en-US/Engine/Audio/WAV).
 Currently this means 16-bit little endian PCM stored in a WAV file, stereo or mono.
 
