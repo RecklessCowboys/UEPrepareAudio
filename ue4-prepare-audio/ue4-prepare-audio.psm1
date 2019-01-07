@@ -37,6 +37,18 @@ function ue4-prepare-audio {
     Write-Error "InPath equals OutPath"
   }
 
+  $LongPathPrefix="\\?\"
+  if (!$InPath.StartsWith($LongPathPrefix))
+  {
+    $InPath = $LongPathPrefix + $InPath
+  }
+  if (!$OutPath.StartsWith($LongPathPrefix))
+  {
+    $OutPath = $LongPathPrefix + $OutPath
+  }
+
+  # Convert Paths to long file paths, otherwise ffprobe will fail with a long path.
+
   #
   # Use ffprobe.exe to find out about the input file.
   #
