@@ -16,6 +16,7 @@ tool that may need to be modified for your use case.
 ## Requirements
 
 - [ffmpeg.exe](https://ffmpeg.org/) and ffprobe.exe must be in your PATH
+- [7z](https://www.7-zip.org/7z.html) must be in your PATH to run the tests
 
 ## Installation
 
@@ -30,3 +31,7 @@ Run `ue4-prepare-audio` to convert a single audio file
 
 Run `ue4-prepare-audio-folder` to convert an entire directory structure. This creates a new directory
 structure that mimics the source directory but fills it with converted files.
+
+## Tests
+
+Run `.\run-tests.ps1` to verify everything works as expected.
